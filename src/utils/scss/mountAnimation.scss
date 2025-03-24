@@ -1,0 +1,10 @@
+@mixin mountAnimation {
+    opacity: 0;
+    animation: mount 0.4s ease-in forwards;
+}
+
+@keyframes mount {
+    to {
+        opacity: 1;
+    }
+}

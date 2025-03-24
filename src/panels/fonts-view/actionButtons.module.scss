@@ -1,0 +1,21 @@
+.container {
+    padding-block: var(--spacing-6);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--clr-panel-border);
+    color: var(--clr-action-icon);
+
+    .wrapper {
+        display: flex;
+        gap: var(--spacing-10);
+    }
+
+    path {
+        fill: currentColor;
+    }
+}
+.icon {
+    display: flex;
+    width: var(--icon-regular);
+    height: var(--icon-regular);
+}

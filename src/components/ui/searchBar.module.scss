@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    border: 2px solid var(--clr-700);
+    border-radius: 10000px;
+
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        font-family: var(--ff-primary);
+
+        color: var(--clr-txt-dense);
+        font-weight: var(--fw-medium);
+        &::-webkit-input-placeholder {
+            color: var(--clr-txt-thin);
+        }
+        &::-moz-placeholder {
+            color: var(--clr-txt-thin);
+        }
+    }
+
+    .icon {
+        padding: var(--spacing-4);
+        svg {
+            width: var(--icon-sm);
+            height: var(--icon-sm);
+            color: var(--clr-action-icon);
+            path {
+                fill: currentColor;
+            }
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

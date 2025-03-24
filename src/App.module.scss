@@ -1,0 +1,36 @@
+@import "./utils/scss/mountAnimation.scss";
+.root {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.2s ease-in, border-radius 0.2s ease-in-out;
+    z-index: 1000000;
+    border: 1px solid var(--clr-panel-border);
+    box-shadow: -3px 7px 50px 1px var(--clr-shadow);
+    background-color: var(--clr-root-bg);
+    width: 370px;
+    height: clamp(500px, 90vh, 800px);
+    line-height: 1.5;
+    word-spacing: 1.2px;
+    &.floating {
+        border: none;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow-round);
+        width: var(--size);
+        height: var(--size);
+        --size: 55px;
+    }
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        &.floating {
+            display: none;
+            pointer-events: none;
+        }
+
+        @include mountAnimation;
+    }
+}

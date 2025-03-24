@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid var(--clr-panel-border);
+    height: 200px;
+    border-radius: 5px;
+
+    &.blue {
+        border-color: var(--clr-accent-blue);
+        border-width: 2px;
+    }
+}

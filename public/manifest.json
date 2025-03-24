@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "LazyFonts",
+    "description": "no discription",
+    "version": "1.0.0",
+    "permissions": ["activeTab", "tabs", "scripting", "storage"],
+    "host_permissions": ["*://*/*"],
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
+    }
+}
