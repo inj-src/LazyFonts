@@ -1,0 +1,1 @@
+This is a chrome extension allows devs to check fonts on their website on the go. Fonts are available from Google fonts api. You can use from Google chrome webstore: https://chromewebstore.google.com/detail/ecllgniioimapndpncajnecbeejedglh?utm_source=item-share-cb
